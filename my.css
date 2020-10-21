@@ -1,0 +1,44 @@
+body{
+	background:rgba(214, 118, 118, 0.9);
+	padding:56px 80px 160px 60px;
+	margin:0;
+}
+article{
+	max-width:760px;
+	margin:auto;
+}
+*{
+	box-sizing: border-box;
+}
+p{
+	color: rgb(255,255,255);
+	font-size:1.5em;
+	font-family:Arial;
+}
+h2,h3{
+	color: rgb(255,255,255);
+	font-family:sans-serif;
+	border-bottom:5px solid green;
+	padding-bottom:10px;
+	padding-top:20px;
+}
+#logo{
+	font-family:Arial;
+	font-size:2em;
+	color: rgb(255,255,255, 0.8);
+	font-style:Italic;
+	text-align:center;
+	margin-bottom:20px;
+	background:rgb(190,180,110);
+	border-radius:10px 10px 10px 10px;
+	padding:20px;
+}
+
+
+
+
+
+
+
+
+
