@@ -1,50 +1,129 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-<title>HTML_PRACTICE</title>
+<title>MYSITES</title>
 <meta charset="utf-8">
 <style>
-body{
-        background:url("https://b1.filmpro.ru/c/547295.700xp.jpg") center no-repeat;
-	background-size:cover;
-	background-size:cover;
-	padding:56px 80px 60px 60px;
-	margin:0;
+	body{
+	margin: 0;
+	/*<link href="//db.onlinewebfonts.com/c/85272d2db514c0ccec8112b4e19a46c5?family=PF+Agora+Sans+Pro+Black" rel="stylesheet" type="text/css">
+	font-family: PF Agora Sans Pro Black";*/
+	color:#fff;
+	font-size: 22.5px;
+	line-height: 1.6;
 }
-*{
+*,
+*:before,
+*:after{
 	box-sizing: border-box;
 }
-
-h1{
-	color: red;
-	font-family:sans-serif;
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+/*container*/
+.container{
+	width:100%;
+	max-width:1200px;
+	margin:auto;
+}
+.intro{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width:100%;
+	height:100vh;
+	background:url('https://image.freepik.com/free-vector/abstract-tech-sci-fi-hologram-frame-template-design-background_115579-397.jpg')center no-repeat;
+	-webkit-background-size:cover;
+}
+.intro_inner{
+	width:100%;
+	max-width:880px;
+	margin:auto;
+}
+.intro_title{
 	font-size:150px;
-	padding:20px;
+	font-weight:800;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:1;
+}
+header{
+	width:100%;
+	padding-top:30px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	
+}
+.header_inner{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.header_logo{
+	font-size:30px;
+	font-weight:700;
+}
+nav{
+	font-size:14px;
+	text-transform:uppercase;
+}
+a{
+	display:inline-block;
+	vertical-align:top;
+	margin:0 15px;
+	position:relative;
+	color:#fff;
+	text-decoration:none;
+	transition:color .3s linear;
+}
+a:after{
+	content:"";
+	display:block;
+	width:100%;
+	height:3px;
+	background:#fce38a;
+	opacity:0;
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:1;
+	transition:opacity .3s linear;
+}
+a:hover{
+	color:#fce38a;
+}
+a:hover:after{
+	opacity:1;
 }
 
-::selection{
-color:brown;
-}
 </style>
 </head>
 <body>
-<h1>САНЯ БЛ* ПРОСНИСЬ</h1>
-</body>
-</html>
 
-<!--
-<strong> - Выделения жирным шрифтом
-<p> - выделяет участок
-<em> - текст курсивом 
-<hr> - горизонтальная линия
-<br> - перенос строки
-<h1> - <h6> - заголовки
-style
-<article> - заголовок и содержание(<h2>)
-<section> - блок новостей, контактной информации,
-глав текста, вкладок в диалоговом окне и др.(<h2> и <h3>)
-<nav> -  задает навигацию по сайту то есть меню.
-<header> - для подсказок, анонсов и навигации.
-<main> - контейнер
-<footer> -  
--->
+<header>
+<div class="container">
+<div class="header_inner">
+<div class="header_logo">MYSITE</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Blog</a>
+<a href="#">About us</a>
+<a href="#">Contact us</a>
+<a href="#">Shop</a>
+</nav>
+</div>
+</div>
+</header>
+
+<div class="intro">
+<div class="container">
+<div class="intro_inner">
+<h1 class="intro_title">Welcome to MYSITE</h1>
+</div>
+</div>
+</div>
+</body>
