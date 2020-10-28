@@ -3,8 +3,10 @@
 <head>
 <title>MYSITES</title>
 <meta charset="utf-8">
-<link href="//db.onlinewebfonts.com/c/85272d2db514c0ccec8112b4e19a46c5?family=PF+Agora+Sans+Pro+Black" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link href"//db.onlinewebfonts.com/c/85272d2db514c0ccec8112b4e19a46c5?family=PF+Agora+Sans+Pro+Black" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+<meta name="format-detection" content="telephone=no">
 <style>
 body{
 	margin: 0;
@@ -33,18 +35,19 @@ h1,h2,h3,h4,h5,h6{
 	justify-content:center;
 	width:100%;
 	height:100vh;
-	background:url('bg1.jpg')center no-repeat fixed;
+	background:url('bg1.jpg')center no-repeat;
 	-webkit-background-size:cover;
-	text-align:center;
+	background-size:cover;
 }
 .intro_inner{
 	width:100%;
 	max-width:880px;
 	margin:auto;
+	text-align:center;
 }
 .intro_title{
 	font-size:135px;
-	font-weight:800;
+	font-weight:700;
 	text-transform:uppercase;
 	line-height:1;
 }
@@ -57,26 +60,11 @@ h1,h2,h3,h4,h5,h6{
 	background:#fff;
 }
 .intro_suptitle{
+	margin-bottom:20px;
 	font-size:52px;
 	font-family: 'Lato', sans-serif;
 }
-.btn{
-	display:inline-block;
-	vertical-align:top;
-	padding:8px 30px;
-	border:3px solid #fff;
-	font-size:14px;
-	font-weight:700;
-	color:#fff;
-	text-decoration:none;
-	text-transform:uppercase;
-	transition:background .3s linear;
-}
-.btn:hover{
-	background:#fff;
-	color:#333;
-}
-header{
+.header{
 	width:100%;
 	padding-top:30px;
 	position:absolute;
@@ -132,11 +120,34 @@ header{
 .nav_link:hover:after{
 	opacity:1;
 }
+.btn{
+	display:inline-block;
+	vertical-align:top;
+	padding:8px 30px;
+	border:3px solid #fff;
+	font-size:14px;
+	font-weight:700;
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	transition:color .3s linear,background .3s linear;
+}
+.btn:hover{
+	background:#fff;
+	color:#333;
+}
+.slider{
+	display:flex;
+	justify-content:space-between;
+}
+.slider-item{
+	width:14px;
+}
 </style>
 </head>
 <body>
 
-<header>
+<header class="header">
 <div class="container">
 <div class="header_inner">
 <div class="header_logo"><a id="logo_link" href="site1.html#logo_link">MYSITE</a></div>
@@ -150,16 +161,36 @@ header{
 </nav>
 </div>
 </div>
-</header>
+</header class="header">
 
 <div class="intro">
 <div class="container">
+
 <div class="intro_inner">
 <h2 class="intro_suptitle">Creative Template</h2>
 <h1 class="intro_title">Welcome to MYSITE</h1>
-
 <a class="btn" href="#">Learn More</a>
 </div>
+
+<div class="slider">
+<div class="slider_item">
+<b>01</b>
+Intro
+</div>
+<div class="slider_item">
+<b>02</b>
+Work
+</div>
+<div class="slider_item">
+<b>03</b>
+About us
+</div>
+<div class="slider_item">
+<b>04</b>
+Contacts
+</div>
+</div>
+
 </div>
 </div>
 </body>
