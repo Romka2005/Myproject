@@ -76,7 +76,13 @@ h1,h2,h3,h4,h5,h6{
 	left:0;
 	right:0;
 	z-index:1000;
-	
+}
+.header--fixed{
+	background:#000c31;
+	position:fixed;
+	top:0;
+	right:0;
+	transform:translate3d(0,0,0);
 }
 .header_inner{
 	display:flex;
@@ -127,6 +133,43 @@ h1,h2,h3,h4,h5,h6{
 }
 .nav_link.active{
 	color:#fce38a;
+}
+/*nav toggle*/
+.nav-toggle{
+	padding:10px 0;
+	width:30px;
+	position:absolute;
+	top:30px;
+	right:30px;
+	z-index:1;
+}
+.nav-toggle_item{
+	display:block;
+	width:100%;
+	height:3px;
+	background:#fff;
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	margin:auto;
+}
+.nav-toggle_item:before,
+.nav-toggle_item:after{
+	content:"";
+	width:100%;
+	height:3px;
+	background:#fff;
+	position:absolute;
+	left:0;
+	z-index:1;
+}
+.nav-toggle_item:before{
+	top:8px;
+}
+.nav-toggle_item:after{
+	bottom:8px;
 }
 .btn{
 	display:inline-block;
@@ -189,18 +232,10 @@ h1,h2,h3,h4,h5,h6{
 
 @media(max-width:1230px){
     .intro_suptitle{
-		font-size:42px;
+		font-size:30px;
 	}
 	.intro_title{
-		font-size:105px;
-	}
-}
-@media(max-width:990px){
-    .intro_suptitle{
-		font-size:32px;
-	}
-	.intro_title{
-		font-size:85px;
+		font-size:95px;
 	}
 }
 @media(max-width:770px){
@@ -211,7 +246,7 @@ h1,h2,h3,h4,h5,h6{
 		font-size:35px;
 	}
 	.intro_title{
-		font-size:45px;
+		font-size:65px;
 	}
 }
 @media(max-width:585px){
@@ -244,20 +279,24 @@ h1,h2,h3,h4,h5,h6{
 </head>
 <body>
 
-<header class="header">
-<div class="container">
-<div class="header_inner">
-<div class="header_logo"><a id="logo_link" href="site1.html#logo_link">MYSITE</a></div>
+<header class="header header--fixed">
+	<div class="container">
+		<div class="header_inner">
+			<div class="header_logo"><a id="logo_link" href="site1.html#logo_link">MYSITE</a></div>
 
-<nav class="nav">
-<a class="nav_link active" href="#">Home</a>
-<a class="nav_link" href="#">Blog</a>
-<a class="nav_link" href="#">About us</a>
-<a class="nav_link" href="#">Contact us</a>
-<a class="nav_link" href="#">Shop</a>
-</nav>
-</div>
-</div>
+			<nav class="nav">
+				<a class="nav_link active" href="#">Home</a>
+				<a class="nav_link" href="#">Blog</a>
+				<a class="nav_link" href="#">About us</a>
+				<a class="nav_link" href="#">Contact us</a>
+				<a class="nav_link" href="#">Shop</a>
+			</nav>
+			
+			<div class="nav-toggle">
+				<span class="nav-toggle_item"></span>
+			</div>
+		</div>
+	</div>
 </header>
 
 <div class="intro">
