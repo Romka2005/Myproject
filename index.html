@@ -24,7 +24,6 @@ body{
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
-/*container*/
 .container{
 	width:100%;
 	max-width:1230px;
@@ -59,11 +58,11 @@ h1,h2,h3,h4,h5,h6{
 	display:block;
 	width:60px;
 	height:3px;
-	margin:60px auto;
+	margin:50px auto;
 	background:#fff;
 }
 .intro_suptitle{
-	margin-bottom:20px;
+	margin-bottom:5px;
 	font-size:32px;
 
 	font-family: 'Lato';
@@ -79,10 +78,16 @@ h1,h2,h3,h4,h5,h6{
 }
 .header--fixed{
 	background:#000c31;
+	box-shadow:0 3px 10px rgba(0,0,0,0.4);
 	position:fixed;
 	top:0;
+	left:0;
 	right:0;
 	transform:translate3d(0,0,0);
+}
+.header.active{
+	background:#000c31;
+	
 }
 .header_inner{
 	display:flex;
@@ -134,13 +139,23 @@ h1,h2,h3,h4,h5,h6{
 .nav_link.active{
 	color:#fce38a;
 }
-/*nav toggle*/
+
 .nav-toggle{
-	padding:10px 0;
 	width:30px;
+	padding:10px 0;
+	outline:none;
+	display:none;
+	
+	font-size:0;
+	color:transparent;
+	
+	border:0;
+	background:none;
+	cursor:pointer;
+	
 	position:absolute;
-	top:30px;
-	right:30px;
+	top:24px;
+	right:24px;
 	z-index:1;
 }
 .nav-toggle_item{
@@ -225,7 +240,10 @@ h1,h2,h3,h4,h5,h6{
 	font-size:21px;
 	font-weight:700;
 }
-
+/*Section*/
+.section{
+	padding:80px 0;
+}
 
 
 
@@ -239,6 +257,9 @@ h1,h2,h3,h4,h5,h6{
 	}
 }
 @media(max-width:770px){
+	.header{
+		padding:10px;
+	}
 	.intro{
 		min-height:550px;
 	}
@@ -250,6 +271,9 @@ h1,h2,h3,h4,h5,h6{
 	}
 }
 @media(max-width:585px){
+	.header{
+		padding-top:10px 0;
+	}
     .intro_suptitle{
 		font-size:20px;
 	}
@@ -257,7 +281,20 @@ h1,h2,h3,h4,h5,h6{
 		font-size:55px;
 	}
 	.nav{
-		display:none;
+	    display:none;
+		width:100%;
+		position:absolute;
+		top:100%;
+		left:0;
+		background:#000c31;
+	}
+	.nav_link{
+		display:block;
+		margin:0;
+		padding:8px 20px;
+	}
+	.nav-toggle{
+		display:block;
 	}
 	.slider_text{
 		display:none;
@@ -279,7 +316,7 @@ h1,h2,h3,h4,h5,h6{
 </head>
 <body>
 
-<header class="header active">
+<header class="header active header--fixed">
 	<div class="container">
 		<div class="header_inner">
 			<div class="header_logo"><a id="logo_link" href="site1.html#logo_link">MYSITE</a></div>
@@ -331,5 +368,20 @@ h1,h2,h3,h4,h5,h6{
 		</div>
 	</div>
 </div>
+
+<section class="section">
+	<div class="container">
+	
+		<div class="section__header">
+			<h3 class="section__suptitle">What we do</h3>
+			<h2 class="section__title">Story about us</h2>
+			<div class="section__text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh mi, facilisis eget luctus a, faucibus ut justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 </body>
 </html>
