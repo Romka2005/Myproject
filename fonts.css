@@ -11,6 +11,12 @@
 	font-weight:normal;
 }
 @font-face{
+	font-family: 'Raleway-ExtraBold1';
+	src:url("Raleway-ExtraBold/Raleway-ExtraBold.ttf")format("truetype");
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face{
 	font-family: 'Raleway-SemiBold';
 	src:url("Raleway-SemiBold/Raleway-SemiBold.ttf")format("truetype");
 	font-style:normal;
@@ -19,6 +25,12 @@
 @font-face{
 	font-family: 'Roboto-Regular';
 	src:url("Roboto-Regular/3966.ttf")format("truetype");
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face{
+	font-family: 'Raleway-Bold';
+	src:url("Raleway-Bold/Raleway-Bold.ttf")format("truetype");
 	font-style:normal;
 	font-weight:normal;
 }
