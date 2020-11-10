@@ -206,15 +206,17 @@ h1,h2,h3,h4,h5,h6{
 /*ТЕКСТ НЕ ЦЕНТР*/
 .about{
 	display:flex;
-	
+	flex-wrap:wrap;
 	justify-content:space-between;
 	margin:95px 0 60px;
 }
 .about__item{
-	max-width:31%;
+	
+	width:33.333333%;
 	color:#061e37;
 	text-align:center;
-	
+	padding-left:20px;
+	padding-right:20px;
 }
 .about__icon{
 	margin-bottom:40px;
@@ -277,6 +279,17 @@ h1,h2,h3,h4,h5,h6{
 }
 }
 @media (max-width:750px){
+    .about{
+		justify-content:center;
+	}
+	.about__item{
+		width:70%;
+		text-align:center;
+		margin-bottom:50px;
+	}
+	.about__item--border{
+	border-bottom:1px solid #e5e5e5;
+}
 	.nav__link{
 		display:none;
 }
