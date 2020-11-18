@@ -497,11 +497,6 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
 }
 
-.section__review__content {
-  display: block;
-  max-width: 515px;
-}
-
 .section__review__title {
   font-family: 'Raleway-SemiBold';
   font-size: 45px;
@@ -527,6 +522,54 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: -1px 2px 4px #000;
   -webkit-transition: color .3s linear, background .3s linear;
   transition: color .3s linear, background .3s linear;
+}
+
+.section__review__content {
+  display: block;
+  max-width: 515px;
+}
+
+.section__review__people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 762px;
+  margin: auto;
+}
+
+.section__review__img {
+  float: right;
+  text-align: center;
+  width: 170px;
+  margin-right: 48px;
+}
+
+.section__review__img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.section__review__box {
+  background: #fff;
+  padding: 32px 36px 32px 32px;
+  max-width: 700px;
+}
+
+.section__review__box h1 {
+  font-family: 'Raleway-Bold';
+  color: #061e37;
+  padding-bottom: 15px;
+}
+
+.section__review__box h3 {
+  font-family: 'Raleway-Regular';
+  color: #78909c;
+  font-style: italic;
+  line-height: 25px;
 }
 
 @media (max-width: 1340px) {
