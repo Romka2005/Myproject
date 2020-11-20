@@ -3,6 +3,7 @@ body {
   margin: 0;
   color: #fff;
   font-size: 15px;
+  padding: 0;
 }
 
 ul li {
@@ -11,6 +12,7 @@ ul li {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
 }
 
 *,
@@ -24,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 80px;
+  padding: 0 40px;
   margin: auto;
 }
 
@@ -52,12 +54,8 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1440px;
-  margin: auto;
+  max-width: 1540px;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .intro__title {
@@ -125,11 +123,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro__video {
   float: right;
-  text-align: center;
 }
 
 .intro__video img {
   width: 100%;
+  float: right;
   height: auto;
 }
 
@@ -319,6 +317,9 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .stat__block {
@@ -478,37 +479,32 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 562px;
+  height: 100vh;
   margin-top: 93px;
   background: url("Rectangle.jpg") center no-repeat;
   background-size: cover;
+  margin: auto;
 }
 
-.section__review__inner {
+.reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  max-width: 1440px;
-  margin: auto;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.section__review__title {
+.reviews__title {
   font-family: 'Raleway-SemiBold';
   font-size: 45px;
   margin-bottom: 20px;
 }
 
-.section__review__subtitle {
+.reviews__subtitle {
   font-family: 'Raleway-SemiBold';
   margin-bottom: 70px;
 }
 
-.section__review__btn {
+.reviews__btn {
   font-family: 'Raleway-Bold';
   display: inline-block;
   vertical-align: top;
@@ -524,48 +520,78 @@ h1, h2, h3, h4, h5, h6 {
   transition: color .3s linear, background .3s linear;
 }
 
-.section__review__content {
+.reviews__content {
   display: block;
   max-width: 515px;
-}
-
-.section__review__people {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 762px;
   margin: auto;
 }
 
-.section__review__img {
-  float: right;
-  text-align: center;
-  width: 170px;
-  margin-right: 48px;
-}
-
-.section__review__img img {
+.reviews__people {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 762px;
+}
+
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 70px;
+  padding-left: 95px;
+  position: relative;
+}
+
+.reviews__img {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 1;
+  width: 55px;
+  text-align: center;
+}
+
+.reviews__img img {
+  display: inline-block;
   width: 100%;
-  height: auto;
   border-radius: 50%;
 }
 
-.section__review__box {
+.reviews__box {
   background: #fff;
-  padding: 32px 36px 32px 32px;
+  padding: 32px 36px 28px 32px;
   max-width: 700px;
 }
 
-.section__review__box h1 {
+.reviews__slider__up {
+  position: relative;
+  max-width: 700px;
+}
+
+.reviews__slider__up:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.reviews__box h1 {
   font-family: 'Raleway-Bold';
   color: #061e37;
   padding-bottom: 15px;
 }
 
-.section__review__box h3 {
+.reviews__box h3 {
   font-family: 'Raleway-Regular';
   color: #78909c;
   font-style: italic;
