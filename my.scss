@@ -102,13 +102,14 @@ h1,h2,h3,h4,h5,h6{
 	max-width:570px;
 }
 .intro__video{
+	position: absolute;
+	right:0;
+	top:0;
 	
-	
-	float: right;
 }
 .intro__video img{
 	width: 100%;
-	float: right;
+	
     height: auto;
 	
 	
@@ -343,9 +344,6 @@ h1,h2,h3,h4,h5,h6{
 	display: block;
 	width: 11px;
 	height: 11px;
-	/*border-top: 5px solid #061e37;
-	border-right: 5px solid transparent;
-	border-left:  5px solid transparent;*/
 	border-bottom: 5px solid #061e37;
 	border-right: 5px solid transparent;
 	border-left:  5px solid transparent;
@@ -383,7 +381,9 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 600;
 	
 }
-
+.accordion__header.margin{
+	margin-bottom: 89px;
+}
 
 
 
@@ -435,6 +435,7 @@ h1,h2,h3,h4,h5,h6{
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 762px;
+	
 }
 .reviews__item{
 	display: flex;
@@ -493,11 +494,128 @@ h1,h2,h3,h4,h5,h6{
 	font-style: italic;
 	line-height: 25px;
 }
-@media (max-width:1340px){
+
+/*team*/
+.team__header{
+	width:100%;
+	max-width:560px;
+	margin-top: 40px;
+}
+.team__slider{
+	text-align: center;
+	padding-top: 70px;
+	
+}
+.team__img{
+	display: flex;
+	position: relative;
+	max-width: 600px;
+	margin: auto;
+}
+.team__img img{
+	display: inline-block;
+	
+	height:90px;
+	
+	border-radius:50%;
+}
+.team__img.left img{
+	position: absolute;
+	left:430px;
+	bottom:50px;
+}
+.team__img.right img{
+	position: absolute;
+	right:430px;
+	bottom:50px;
+}
+.team__img.active{
+	display: flex;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0px 0px 50px 1px #dedede;
+	height: 200px;
+	width: 200px;
+	margin: 0px 20px 0px 0px;
+	margin:auto;
+}
+
+.team__img.active img{
+	display: inline-block;
+	margin: auto;
+	height:130px;
+	
+	border-radius:50%;
+}
+.team__description{
+	padding-top: 40px;
+	text-align: center;
+	max-width: 653px;
+	margin: auto;
+}
+.team___name{
+	font-family: 'Raleway-Bold';
+	color:#061e37;
+	font-size: 18px;
+}
+.team__about{
+	padding-top: 15px;
+	font-family: 'Raleway-Regular';
+	color:#90a4ae;
+	line-height: 24px;
+}
+.team__icons{
+	margin-top:30px;
+	
+}
+.team__icons img{
+	padding:  0 10px 0 10px;
+	margin-bottom: 89px;
+}
+/*contact*/
+.section__contact{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	height:100vh;
+	background:#fafafa;
+	-webkit-background-size:cover;
+	background-size:cover;
+	.container{
+		margin:0;
+		padding-top:50px;
+	}
+}
+.section__text.contact{
+	color:#061e37;
+}
+@media (max-width:1251px){
 	.intro__inner{
 		flex-wrap:wrap;
 	}
-	
+	.section__review{
+		width:100%;
+		height:1000px;
+		
+	}
+	.reviews__content{
+		display: block;
+		max-width: 515px;
+		margin:0;
+		padding-bottom: 600px;
+	}
+	.reviews__people{
+		display:block;
+		position: absolute;
+		top:350px;
+		left:0;
+		
+		max-width: 762px;
+	}
+	.intro__video{
+		position: relative;
+		
+	}
 }
 @media (max-width:1044px){
 	.container{
@@ -512,6 +630,12 @@ h1,h2,h3,h4,h5,h6{
 	.stat__block{
 		justify-content: start;
 		margin:0 0 0 40%;
+	}
+	.team__img{
+		display: flex;
+		position: relative;
+		max-width: 600px;
+		margin: auto;
 	}
 }
 @media (max-width:750px){
@@ -532,6 +656,7 @@ h1,h2,h3,h4,h5,h6{
 	.nav__link{
 		display:none;
 }
+
 }
 @media (max-width:530px){
 	.intro{
