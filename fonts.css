@@ -34,3 +34,9 @@
 	font-style:normal;
 	font-weight:normal;
 }
+@font-face{
+	font-family: 'Raleway-Medium';
+	src:url("Raleway-Medium/Raleway-Medium.ttf")format("truetype");
+	font-style:normal;
+	font-weight:normal;
+}
