@@ -678,8 +678,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section__contact .container {
-  margin: 0;
-  padding-top: 50px;
+  margin: auto;
+  padding-bottom: 210px;
 }
 
 .section__text.contact {
@@ -789,7 +789,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 280px;
+  height: 300px;
   background: #061e37;
   padding: 50px;
 }
@@ -828,7 +828,7 @@ footer .container {
 
 .footer__box {
   margin-top: 40px;
-  padding-left: 0;
+  padding-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,11 +836,14 @@ footer .container {
 
 .footer__box .footer__noli {
   list-style: none;
+  padding-right: 25px;
+  padding-top: 2.5px;
 }
 
 .footer__box a {
+  display: block;
+  width: 120px;
   font-family: 'Raleway-Regular';
-  padding-right: 30px;
   color: #fff;
   font-size: calc(9px + 6 * (100vw / 1600));
 }
@@ -976,6 +979,9 @@ footer .container {
   .nav__link {
     display: none;
   }
+  .btn {
+    display: none;
+  }
   .reviews__box h3 {
     text-overflow: ellipsis;
     height: 100px;
@@ -1050,16 +1056,17 @@ footer .container {
             justify-content: start;
     margin: 0 0 0 33%;
   }
-}
-
-.send__big input {
-  width: 100%;
-  height: 100px;
-  padding-bottom: 65px;
-}
-
-.send__nav {
-  font-size: 12px;
+  .send__big input {
+    width: 100%;
+    height: 100px;
+    padding-bottom: 65px;
+  }
+  .send__nav {
+    font-size: 12px;
+  }
+  .footer__box a {
+    width: 80px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1105,9 +1112,6 @@ footer .container {
   .header__logo2 {
     opacity: 0;
   }
-  .btn {
-    display: none;
-  }
   .intro {
     min-height: 700px;
   }
@@ -1147,6 +1151,9 @@ footer .container {
   }
   .footer__box {
     margin-top: 30px;
+  }
+  .footer__box .footer__noli {
+    padding-top: 4.5px;
   }
   .footer__box a {
     font-size: calc(9px + (6 + 6 * 0.7) * ((100vw - 320px)/ 1600));
@@ -1196,6 +1203,13 @@ footer .container {
   }
   .team__icons img {
     width: 38px;
+  }
+  .footer__box {
+    width: 230px;
+    padding-bottom: 50px;
+  }
+  .footer__box a {
+    width: 60px;
   }
 }
 

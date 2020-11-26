@@ -566,8 +566,8 @@ h1,h2,h3,h4,h5,h6{
 	-webkit-background-size:cover;
 	background-size:cover;
 	.container{
-		margin:0;
-		padding-top:50px;
+		margin:auto;
+		padding-bottom:210px;
 	}
 }
 .section__text.contact{
@@ -662,7 +662,7 @@ footer{
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 280px;
+	height: 300px;
 	background: #061e37;
 	padding: 50px;
 	
@@ -693,15 +693,18 @@ footer{
 }
 .footer__box{
 	margin-top: 40px;
-	padding-left: 0;
+	padding-left: 0px;
 	display: flex;
 	.footer__noli{
 		list-style: none; 
+		padding-right: 25px;
+		padding-top: 2.5px;
 	}
 	a{
-		
+		display: block;
+		width: 120px;
 		font-family: 'Raleway-Regular';
-		padding-right: 30px;
+		
 		color:#fff;
 		font-size:calc(9px + 6 * (100vw / 1600));
 	}
@@ -724,6 +727,7 @@ footer{
 		font-family: 'Raleway-SemiBold';
 		color:#fff;
 		padding-left: 45px;
+		
 	}
 }
 .footer__socials{
@@ -837,6 +841,9 @@ footer{
 	.nav__link{
 		display:none;
 }
+	.btn{
+		display: none;
+}
 	.reviews__box{
 	
 		h3{
@@ -902,7 +909,6 @@ footer{
 		justify-content: start;
 		margin:0 0 0 33%;
 	}
-}
 
 	.send__big input{
 		width:100%;
@@ -912,6 +918,12 @@ footer{
 	.send__nav{
 		font-size: 12px;
 	}
+	.footer__box{
+		a{
+			width: 80px;
+		}
+	}
+}
 @media (max-width:420px){
 	.send__padding{
 		
@@ -959,9 +971,7 @@ footer{
 	.header__logo2{
 		opacity: 0;
 	}
-	.btn{
-		display: none;
-	}
+
 	.intro{
 		min-height:700px;
 	}
@@ -1004,7 +1014,10 @@ footer{
 		
 	}
     .footer__box{
-	    margin-top: 30px;
+		margin-top: 30px;
+		.footer__noli{
+			padding-top: 4.5px;
+		}
 	    a{
 			font-size:calc(9px + (6 + 6 * 0.7) * ((100vw - 320px)/ 1600));
 			
@@ -1051,6 +1064,14 @@ footer{
 	.team__icons img{
 		width:38px;
 	
+}
+.footer__box{
+	width:230px;
+	padding-bottom: 50px;
+	a{
+
+		width: 60px;
+	}
 }
 
 }
