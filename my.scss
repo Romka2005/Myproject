@@ -257,6 +257,11 @@ h1,h2,h3,h4,h5,h6{
 	padding:19px 25px;
 	box-shadow:3px 3px 6px #cecece;
 	text-align:center;
+	transition:color .3s linear, background .3s linear;
+}
+.btn__ok:hover{
+	color:#1de9b6;
+	background: #fff;
 }
 .about__btn{
 	text-align:center;
@@ -427,6 +432,10 @@ h1,h2,h3,h4,h5,h6{
 	border-radius:3px 3px 3px 3px;
 	box-shadow:-1px 2px 4px #000;
 	transition:color .3s linear, background .3s linear;
+}
+.reviews__btn:hover{
+	color:#061e37;
+	background:#fff;
 }
 .reviews__content{
 	display: block;
@@ -654,7 +663,12 @@ input:disabled + label:before {
 	background: #1de9b6;
 	color:#fff;
 	border: 0;
-	
+	transition:color .3s linear, background .3s linear;
+	cursor: pointer;
+}
+.send__bottom input:hover{
+	color:#1de9b6;
+	background: #fff;
 }
 /*footer*/
 footer{
@@ -675,6 +689,13 @@ footer{
 .footer__inner{
 	display:flex;
 	justify-content: space-between;
+	
+}
+.footer__inner a{
+	transition:color .3s linear, background .3s linear;
+}
+.footer__inner a:hover{
+	color:#1de9b6;
 }
 .footer__logo{
 	position:relative;
@@ -698,7 +719,7 @@ footer{
 	.footer__noli{
 		list-style: none; 
 		padding-right: 25px;
-		padding-top: 2.5px;
+		
 	}
 	a{
 		display: block;
@@ -900,6 +921,11 @@ footer{
 	.reviews__people{
 		top: 369px;
 	}
+	.footer__noli{
+		list-style: none; 
+		margin-top: 0.8%;
+		
+	}
 }
 @media (max-width:495px){
 	.reviews__people{
@@ -1016,10 +1042,10 @@ footer{
     .footer__box{
 		margin-top: 30px;
 		.footer__noli{
-			padding-top: 4.5px;
+			padding-top: 4px;
 		}
 	    a{
-			font-size:calc(9px + (6 + 6 * 0.7) * ((100vw - 320px)/ 1600));
+			
 			
 	}
 }
@@ -1033,10 +1059,15 @@ footer{
 	.send__nav{
 		font-size: 12px;
 }
-}
-.footer__box{
-	width:250px;
 
+	.footer__box{
+		width:250px;
+	}
+	.footer__noli{
+		list-style: none; 
+		margin-top: -0.4%;
+		
+	}
 }
 @media (max-width:320px){
 	.reviews__people{
