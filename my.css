@@ -402,19 +402,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 18px;
 }
 
-.accordion__item.active {
+.accordion__item__active {
   -webkit-box-shadow: 0px 0px 16px #c0c0c0;
           box-shadow: 0px 0px 16px #c0c0c0;
 }
 
-.accordion__item.active
+.accordion__item__active
 .accordion__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.accordion__item.active
+.accordion__item__active
 .accordion__header:after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -472,8 +472,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-.accordion__header.margin {
-  margin-bottom: 89px;
+.wedo__end {
+  margin-bottom: 50px;
 }
 
 .section__review {
