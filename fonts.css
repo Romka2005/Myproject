@@ -1,42 +1,18 @@
 @font-face{
-	font-family: 'Raleway-Regular';
-	src:url("Raleway-Regular/Raleway-Regular.ttf")format("truetype");
+	font-family: 'Exo-Medium';
+	src:url("Exo-Medium/Exo-Medium.ttf")format("truetype");
 	font-style:normal;
 	font-weight:normal;
 }
 @font-face{
-	font-family: 'Raleway-ExtraBold';
-	src:url("Raleway-ExtraBold/Raleway-ExtraBold.ttf")format("truetype");
+	font-family: 'Exo-Thin';
+	src:url("Exo-Thin/Exo-Thin.ttf")format("truetype");
 	font-style:normal;
 	font-weight:normal;
 }
 @font-face{
-	font-family: 'Raleway-ExtraBold1';
-	src:url("Raleway-ExtraBold/Raleway-ExtraBold.ttf")format("truetype");
-	font-style:normal;
-	font-weight:normal;
-}
-@font-face{
-	font-family: 'Raleway-SemiBold';
-	src:url("Raleway-SemiBold/Raleway-SemiBold.ttf")format("truetype");
-	font-style:normal;
-	font-weight:normal;
-}
-@font-face{
-	font-family: 'Roboto-Regular';
-	src:url("Roboto-Regular/3966.ttf")format("truetype");
-	font-style:normal;
-	font-weight:normal;
-}
-@font-face{
-	font-family: 'Raleway-Bold';
-	src:url("Raleway-Bold/Raleway-Bold.ttf")format("truetype");
-	font-style:normal;
-	font-weight:normal;
-}
-@font-face{
-	font-family: 'Raleway-Medium';
-	src:url("Raleway-Medium/Raleway-Medium.ttf")format("truetype");
+	font-family: 'Exo-Regular';
+	src:url("Exo-Regular/Exo-Regular.ttf")format("truetype");
 	font-style:normal;
 	font-weight:normal;
 }
