@@ -23,6 +23,62 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #061e37;
+  z-index: 999;
+  -webkit-transform: 1s all;
+          transform: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+
+.preloader .loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-radius: 100%;
+  border-top-color: #1de9b6;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: 1s spin infinite linear;
+          animation: 1s spin infinite linear;
+}
+
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -138,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .header--fixed {
